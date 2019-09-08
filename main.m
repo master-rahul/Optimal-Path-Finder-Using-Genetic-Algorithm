@@ -4,9 +4,7 @@ disp('##########################################################################
 disp('###################################')
 disp('###################################')
 disp('##Deveoped By:                   ##')
-disp('##Rahul Verma (C15D-CS15)        ##')
-disp('##Nimesh Khawas (C15D-CS13)      ##')
-disp('##Anup Rai (C15D-CS03)           ##')
+disp('##Rahul Verma                    ##')
 disp('###################################')
 city=input('Enter the city number: ');
 pm=0.01;
@@ -104,18 +102,13 @@ for gc=1:generation
         end
     end
     
- 
     for psc=1:population
         if rand<pmf
             n1=ceil(city*rand);
             n2=ceil(city*rand);
             Gene(psc,n1:n2)=fliplr(Gene(psc,n1:n2));
         end
-    end
-    
-    
-
-    
+    end  
       Gene(1,:)=best_gene;
 end
 disp('########################################################################################################################')
